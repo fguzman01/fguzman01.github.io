@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Felipe Guzmán – QA Automation Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --accent: #38bdf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --accent: #0284c7;
+        --text: #0f172a;
+        --muted: #64748b;
+        --border: #e2e8f0;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 2.2rem; color: var(--accent); }
+    header p { color: var(--muted); margin-top: 0.5rem; font-size: 1rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+    .tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.8rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card h3 { font-size: 1rem; color: var(--text); }
+    .card p { font-size: 0.875rem; color: var(--muted); flex: 1; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .card-tag {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.25rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    .card a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Felipe Guzmán Araya</h1>
+      <p>Sr. QA Automation Engineer · 13+ años de experiencia · Chile</p>
+      <div class="tags">
+        <span class="tag">Playwright</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Appium</span>
+        <span class="tag">Karate DSL</span>
+        <span class="tag">Cypress</span>
+        <span class="tag">JMeter</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">IA aplicada a QA</span>
+      </div>
+    </header>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🎯 Abstracta QA Challenge</h3>
+        <p>Desafío técnico de automatización desarrollado para el proceso de selección de Abstracta. Incluye pruebas E2E y estrategia de testing.</p>
+        <div class="card-tags">
+          <span class="card-tag">Playwright</span>
+          <span class="card-tag">TypeScript</span>
+        </div>
+        <a href="https://github.com/fguzman01/abstracta-qa-challeng" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🏦 BICE QA Framework</h3>
+        <p>Framework de automatización funcional desarrollado para proyecto bancario. Cubre flujos críticos de negocio con patrón Page Object Model.</p>
+        <div class="card-tags">
+          <span class="card-tag">Playwright</span>
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">POM</span>
+        </div>
+        <a href="https://github.com/fguzman01/bice-qa-framework" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🤖 QADAN – QA con Agentes IA</h3>
+        <p>Framework experimental que integra agentes de IA para generar casos de prueba, estructura POM y specs de forma automatizada sobre Playwright.</p>
+        <div class="card-tags">
+          <span class="card-tag">Playwright</span>
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">IA</span>
+          <span class="card-tag">Agentes</span>
+        </div>
+        <a href="https://github.com/fguzman01/qadan" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🏗️ Arquetipo BICE</h3>
+        <p>Arquetipo base reutilizable para proyectos de automatización en entorno bancario. Estructura escalable y configuración de ambientes.</p>
+        <div class="card-tags">
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">CI/CD</span>
+        </div>
+        <a href="https://github.com/fguzman01/arquetipo-bice" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🔌 API Framework – Karate DSL</h3>
+        <p>Framework de automatización de APIs REST construido con Karate DSL. Incluye escenarios de validación, mocks y reportes de ejecución.</p>
+        <div class="card-tags">
+          <span class="card-tag">Karate DSL</span>
+          <span class="card-tag">Java</span>
+          <span class="card-tag">API Testing</span>
+        </div>
+        <a href="https://github.com/fguzman01/api-framewrok-karate" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>📱 Detox React Native Framework</h3>
+        <p>Framework de automatización mobile para aplicaciones React Native usando Detox. Pruebas E2E en dispositivos iOS y Android.</p>
+        <div class="card-tags">
+          <span class="card-tag">Detox</span>
+          <span class="card-tag">React Native</span>
+          <span class="card-tag">Mobile</span>
+        </div>
+        <a href="https://github.com/fguzman01/detox-rn-framework" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>📲 Mobile Maestro</h3>
+        <p>Automatización mobile con Maestro, herramienta moderna para pruebas de aplicaciones iOS y Android con sintaxis YAML simple y efectiva.</p>
+        <div class="card-tags">
+          <span class="card-tag">Maestro</span>
+          <span class="card-tag">Mobile</span>
+          <span class="card-tag">iOS</span>
+          <span class="card-tag">Android</span>
+        </div>
+        <a href="https://github.com/fguzman01/mobile-maestro" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🌲 Cypress QA Framework</h3>
+        <p>Framework de automatización web con Cypress. Pruebas E2E para aplicaciones web modernas con reportes integrados.</p>
+        <div class="card-tags">
+          <span class="card-tag">Cypress</span>
+          <span class="card-tag">JavaScript</span>
+          <span class="card-tag">E2E</span>
+        </div>
+        <a href="https://github.com/fguzman01/cypress-qa-framework" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🔗 Playwright MCP Framework</h3>
+        <p>Integración de Playwright con el protocolo MCP para automatización asistida por IA. POC de captura de objetos y generación de tests.</p>
+        <div class="card-tags">
+          <span class="card-tag">Playwright</span>
+          <span class="card-tag">MCP</span>
+          <span class="card-tag">IA</span>
+        </div>
+        <a href="https://github.com/fguzman01/playwright-mcp-framework" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🤖 Robot Framework Base</h3>
+        <p>Implementación base con Robot Framework para automatización RPA y funcional. Estructura de keywords y recursos reutilizables.</p>
+        <div class="card-tags">
+          <span class="card-tag">Robot Framework</span>
+          <span class="card-tag">Python</span>
+          <span class="card-tag">RPA</span>
+        </div>
+        <a href="https://github.com/fguzman01/robot-framework-base" target="_blank">Ver repositorio →</a>
+      </div>
+
+      <div class="card">
+        <h3>🎭 Playwright Base</h3>
+        <p>Framework base de Playwright con TypeScript, configuración de ambientes, fixtures, helpers y estructura lista para escalar proyectos de QA.</p>
+        <div class="card-tags">
+          <span class="card-tag">Playwright</span>
+          <span class="card-tag">TypeScript</span>
+          <span class="card-tag">CI/CD</span>
+        </div>
+        <a href="https://github.com/fguzman01/playwright-base" target="_blank">Ver repositorio →</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>
+        <a href="https://github.com/fguzman01" target="_blank">GitHub</a> ·
+        <a href="mailto:felipe.guzman.a@gmail.com">felipe.guzman.a@gmail.com</a>
+      </p>
+      <p style="margin-top:0.5rem">Chile · Disponible para trabajo remoto</p>
+    </footer>
+  </div>
+</body>
+</html>
 
